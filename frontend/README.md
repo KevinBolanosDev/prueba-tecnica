@@ -1,12 +1,30 @@
-# React + Vite
+# Creación del proyecto para el Cliente.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para crear un proyecto del lado del cliente vamos a comenzar ejecutando el siguiente comando <br> 
+`npm create vite@latest` de esta forma creamos el proyecto con React.
 
-Currently, two official plugins are available:
+```bash
+$ npm create vite@latest
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A continuación nos preguntaran la configuración para crear el proyecto.
 
-## Expanding the ESLint configuration
+**Selecciona el nombre del proyecto:**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Se pedirá que ingreses un nombre para el proyecto. Puedes llamarlo como desees, por ejemplo en este proyecto `frontend`.
+
+**Selecciona el framework:**
+
+* A continuación, se pedirá que selecciones el marco de trabajo. Deberás elegir **React** (puedes presionar la tecla de flecha hacia abajo y luego presionar Enter).
+
+**Selecciona el tipo de plantilla:**
+
+* Luego se preguntará si quieres usar **JavaScript** o **TypeScript**. Para este ejemplo, seleccionamos **JavaScript**.
+
+Navegamos al directorio o proyecto que acabamos de crear con `cd frontend`, luego ejecutamos `"npm install"` para instalar las dependencias y podemos levantar el servidor con `"npm run dev"`.
+
+```bash
+$ cd frontend
+$ npm install
+$ npm run dev
+```
