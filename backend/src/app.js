@@ -9,12 +9,11 @@ import "dotenv/config"
 const app = express();
 
 //Comunicación entre servidores
-app.use(
-  cors({
-    origin: process.env.APP_FRONT_DEPLOY,
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: process.env.APP_FRONT_DEPLOY,
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
 app.use(morgan("dev"));
 app.use(express.json());
 
