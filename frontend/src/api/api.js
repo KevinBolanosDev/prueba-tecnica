@@ -1,14 +1,13 @@
 import axios from "./axios";
 
-export const getProductsRequest = () => axios.get(`/api/products`);
+export const getProductsRequest = () => axios.get(`/products`);
 
-export const getUsersRequest = () => axios.get(`/api/users`);
+export const getUsersRequest = () => axios.get(`/users`);
 
-export const getSpecialPricesRequest = () => axios.get(`/api/special-prices`);
+export const getSpecialPricesRequest = () => axios.get(`/special-prices`);
 
-export const createProductRequest = (product) => axios.post(`/api/product`, product);
+export const createProductRequest = (product) => axios.post(`/product`, product);
 
-export const createSpecialPriceRequest = (specialPrice) => axios.post(`/api/special-price`, specialPrice);
+export const createSpecialPriceRequest = (specialPrice) => axios.post(`/special-price`, specialPrice);
 
-export const updateSpecialPriceRequest = (specialPrice) => 
-  axios.put(`/api/special-price/:id`, specialPrice);
+export const updateSpecialPriceRequest = (id, specialPrice) => axios.put(`/special-price/${id}`, specialPrice);
