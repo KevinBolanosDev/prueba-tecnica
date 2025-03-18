@@ -31,6 +31,13 @@ express para crear servidores más rápido, utilizando un patrón de diseño MVC
 
 * **Base de datos:** Mondodb.
 
+## Instalación
+
+A continuación puede ir a las respectivas documentaciónes del frontend y el backend:
+
+- Documentación: [Backend](https://github.com/KevinBolanosDev/prueba-tecnica/tree/main/backend)
+- Documentación: [Frontend](https://github.com/KevinBolanosDev/prueba-tecnica/tree/main/frontend)
+
 ## Estructura del proyecto
 
 **Backend**
