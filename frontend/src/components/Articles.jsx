@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getProductsRequest, getSpecialPricesRequest } from '../api/api';
+import NavBar from './NavBar';
 
 function Articles() {
   const [products, setProducts] = useState([])
@@ -44,6 +45,8 @@ function Articles() {
   };
 
   return (
+    <>
+    <NavBar />
     <div className="mx-auto p-4">
       <h1 className="text-2xl font-bold">Artículos</h1>
       <table className="bg-white border border-gray-300">
@@ -68,7 +71,8 @@ function Articles() {
           ))}
         </tbody>
       </table>
-    </div>
+      </div>
+    </>
   )
 }
 

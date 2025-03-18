@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { getProductsRequest, getUsersRequest, updateSpecialPriceRequest } from '../api/api'
+import NavBar from './NavBar'
 
 function FormAdd() {
   const [products, setProducts] = useState([])
@@ -60,6 +61,8 @@ function FormAdd() {
   }
 
   return (
+    <>
+      <NavBar />
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-6">Gestionar Precio Especial</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -125,7 +128,8 @@ function FormAdd() {
           Guardar Precio Especial
         </button>
       </form>
-    </div>
+      </div>
+    </>
   )
 }
 
