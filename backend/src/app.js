@@ -11,7 +11,7 @@ const app = express();
 //Comunicación entre servidores
 app.use(
   cors({
-    origin: process.env.APP_FRONT,
+    origin: process.env.APP_FRONT_DEPLOY,
     credentials: true,
   })
 );
